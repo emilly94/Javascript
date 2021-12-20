@@ -6,7 +6,8 @@
 Um homem precisa atravessar um rio com um barco que possui capacidade para carregar ele mesmo e mais um de seus três pertences, que são:
 um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences.
 A seguinte regra dever ser respeitada: o lobo nao pode ficar sozinho com a cabra e nem a cabra sozinha com o maço de alfafa. Escreva um algoritmo para fazer a travessia dos pertences que estao em uma margem do rio para a outra.
---Resposta
+
+##Resposta
   1: o homem no barco na margem do rio pega o primeiro pertence que seria a cabra;
   2: o homem leva a cabra no barco para a outra margem do rio;
   3: o homem deixa a cabra em terra firme e volta para pegar o outro pertence;
