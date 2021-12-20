@@ -21,6 +21,16 @@ A seguinte regra dever ser respeitada: o lobo nao pode ficar sozinho com a cabra
   10. o homem busca a cabra enqaunto da margem do rio deixou o lobo e o maço de alfafa.
   
 2- JS: Exibir media de 3 numeros com entradas pelo formulario HTML.
+  ```
+  function calculoMedia(){
+      var a = parseInt(document.getElementById('a').value);
+      var b = parseInt(document.getElementById('b').value);
+      var c = parseInt(document.getElementById('c').value);
+
+      const media = (a + b+ c)/3;
+      document.getElementById('resultado').innerHTML = "Resultado da média é: " + media;
+    }
+  ```
   
 3-Resolva as operações:
   * 10 + 15 = 25;
@@ -73,8 +83,31 @@ d) var cavalo = carro == "preto" ? "cinza" : "marrom"
   *carro = "cinza";
   
 e) Quantas prestacoes sao necessarias para pagar o valor do carro com a entrada de 3000? Demostre a operacao.
-  * 36 prestacoes;
+   ```
+  
+  function calcularQuantidadePrestacao(){
+  var valor = 30000;
+  var prestacao = 750; //36
+  var entrada = 3000;
+  var restante = 30000 - 3000;
+
+  for(i=0; i<=50; i++){
+    //console.log(prestacao*i);
+    if(prestacao*i == restante){
+    	console.log(i); //36
+    }
+  }
+}
+```
   
 f) Somando as variaveis de cores e formada uma string de quantos caracteres?
-  * 16
+  ```
+  var branco = "preto";
+  var preto = "cinza";
+  var cinza = "branco";
+  
+  var cores = branco+preto+cinza;
+  
+  console.log(cores.length); //16
+  ```
    
