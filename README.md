@@ -1,7 +1,8 @@
 # Javascript
 
 ##Lista de Exercicios
-1 - Descreva um Algoritmo para resolver o problema da travessia de modo 'seguro':
+
+1-Descreva um Algoritmo para resolver o problema da travessia de modo 'seguro':
 
 Um homem precisa atravessar um rio com um barco que possui capacidade para carregar ele mesmo e mais um de seus três pertences, que são:
 um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences.
@@ -19,8 +20,9 @@ A seguinte regra dever ser respeitada: o lobo nao pode ficar sozinho com a cabra
   9. o homem deixa o maço de alfafa na margem do rio com o logo e volta para buscar a cabra;
   10. o homem busca a cabra enqaunto da margem do rio deixou o lobo e o maço de alfafa.
   
-2- JS: Exibir media de 3 numeros com entradas pelo formulario HTML
-3- Resolva as operações:
+2- JS: Exibir media de 3 numeros com entradas pelo formulario HTML.
+  
+3-Resolva as operações:
   * 10 + 15 = 25;
   * "10" + 2 = 102;
   * "10" * 2 = 20;
@@ -49,4 +51,30 @@ A seguinte regra dever ser respeitada: o lobo nao pode ficar sozinho com a cabra
   * "5" * 2 > 9 = true;
   * (10+10) * 2 = 40;
   * 10 + 10 * 2 = 30;
+
+4-Responda as perguntas de acordo com as variaveis:
+var branco = "preto";
+var preto = "cinza";
+var cinza = "branco";
+var carro = "preto";
+var valor = 30000;
+var prestacao = 750;
+
+a) branco == "branco"
+  * =false;
+  
+b) branco == cinza
+  * =false;
+  
+c) carro == branco
+  * =true
+  
+d) var cavalo = carro == "preto" ? "cinza" : "marrom"
+  *carro = "cinza";
+  
+e) Quantas prestacoes sao necessarias para pagar o valor do carro com a entrada de 3000? Demostre a operacao.
+  * 36 prestacoes;
+  
+f) Somando as variaveis de cores e formada uma string de quantos caracteres?
+  * 16
    
