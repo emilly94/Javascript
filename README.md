@@ -34,7 +34,7 @@ A seguinte regra dever ser respeitada: o lobo nao pode ficar sozinho com a cabra
   
 3-Resolva as operações:
   * 10 + 15 = 25;
-  * "10" + 2 = 102;
+  * "10" + 2 = '102';
   * "10" * 2 = 20;
   * "10" / 3 = 3.33333;
   * "10" % 3 = 1;
@@ -46,7 +46,7 @@ A seguinte regra dever ser respeitada: o lobo nao pode ficar sozinho com a cabra
   * 10 <= 10.1 = true;
   * 10 > 9.99 = true;
   * 10 != "dez" = false;
-  * "dez" + true = deztrue;
+  * "dez" + true = 'deztrue';
   * 10 + false = 10;
   * 10 * false = 0;
   * true + true = 2;
