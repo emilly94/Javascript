@@ -4,44 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercicio 2</title>
-  <style>
-    input, button{
-      display: block;
-    }
-    form{
-      margin-left: 40%;
-    }
-    #resultado{
-      color: green;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    #a{
-      background-color: white;
-    }
-  </style>
+  <title>Média</title>
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <form action="#">
-    <div>
       <h2>Calcular Média
         <br>
-        <small>de 3 numeros</small>
+        <small>de 3 notas</small>
       </h2>
-    </div>
-    
-    <label for="">Digite o primeiro numero</label>
-    <input type="number" id="a" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="error">
-    <label for="">Digite o segundo numero</label>
-    <input type="number" id="b" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-    <label for="">Digite o terceiro numero</label>
-    <input type="number" id="c" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      <label for="">Nome Aluno</label>
+      <input type="text" id="aluno">
+      <hr>
+    <label for="">Nota</label>
+    <input type="text" id="a" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Digite um numero">
+    <span id="msg"></span>
+    <label for="">Nota</label>
+    <input type="text" id="b" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Digite um numero">
+    <span id="msg"></span>
+    <label for="">Nota</label>
+    <input type="text" id="c" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Digite um numero">
+    <span id="msg"></span>
     <button type="submit">Calcular Média</button>
     <div>
       <p id="resultado"></p>
+      <table id="tabela" >
+        <thead>
+          <tr>
+          <th><p>Nome</p></th>
+          <th><p>Nota 1</p></th>
+          <th><p>Nota 2</p></th>
+          <th><p>Nota 3</p></th>
+          <th><p>Media</p></th>
+        </tr>
+        </thead>
+        <tbody>
+           <tr>
+           </tr>
+        </tbody>
+       
+      </table>
     </div>
   </form>
+
   <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
