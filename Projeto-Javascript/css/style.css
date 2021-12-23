@@ -1,9 +1,14 @@
 input, button{
   display: block;
   border-radius: 8px;
+  outline: 0;
+}
+#aluno, #sobrenome_aluno{
+  display: inline;
 }
 #aluno{
-  display: inline;
+  margin-left: 34px;
+  margin-bottom: 8px;
 }
 hr{
   width: 50%;

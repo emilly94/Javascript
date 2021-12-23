@@ -58,6 +58,21 @@ function dadosMedia(){
 
 }
 
+document.addEventListener('focusout', function(event){
+  event.preventDefault();
+
+  var nome = document.getElementById('aluno').value;
+  var sobrenome = document.getElementById('sobrenome_aluno').value;
+
+  if(nome == '' && sobrenome == ''){
+    document.getElementById('sobrenome_aluno').style.borderColor = "#fafa";
+    document.getElementById('aluno').style.borderColor = "#fafa";
+  }else{
+    document.getElementById('aluno').style.borderColor = "#979797";
+    document.getElementById('sobrenome_aluno').style.borderColor = "#979797";
+  }
+})
+
 //colocar o campo de entrada e partir dele fazer o calculo(usar validacao)
 function calcularQuantidadePrestacao(){
   var valor = 30000;
