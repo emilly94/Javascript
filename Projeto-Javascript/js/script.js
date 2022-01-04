@@ -2,27 +2,36 @@
 document.addEventListener('submit', function(event){
   event.preventDefault();
 
-  if(document.getElementById('a').value == NaN || document.getElementById('a').value == ''){
+  /*
+  *TODO: em msg1 usar class ao inves de ID para inserir a mensagem
+  */
+  if( document.getElementById('a').value == NaN || document.getElementById('a').value == ''){
     //document.getElementById('a').style.borderColor = "#faa";
-    document.getElementById('msg').innerHTML = "Preencha o campo";
+    document.getElementById('msg1').innerHTML = "Preencha o campo - NOTA 1";
+    console.log(msg1.value);
     setTimeout(function(){ 
-      var msg = document.getElementById("msg");
-      msg.parentNode.removeChild(msg);   
-  }, 4000);
-    
-  }else if(document.getElementById('b').value == NaN || document.getElementById('b').value == ''){
-    document.getElementById('msg').innerHTML = "Preencha o campo";
+      var msg = document.getElementById("msg1");
+      msg.innerHTML = "";   
+  }, 4000);}
+
+  if( document.getElementById('b').value == NaN || document.getElementById('b').value == ''){
+    console.log('valor de b' + b)
+    document.getElementById('msg2').innerHTML = "Preencha o campo - NOTA 2";
     setTimeout(function(){ 
-      var msg = document.getElementById("msg");
-      msg.parentNode.removeChild(msg);   
-  }, 4000);
-  }else if(document.getElementById('c').value == NaN || document.getElementById('c').value == ''){
-    document.getElementById('msg').innerHTML = "Preencha o campo";
+      var msg = document.getElementById("msg2");
+      msg.innerHTML = ""; 
+  }, 4000);}
+
+  if(document.getElementById('c').value == NaN || document.getElementById('c').value == ''){
+    console.log('valor de c' + c)
+    document.getElementById('msg3').innerHTML = "Preencha o campo - NOTA 3";
     setTimeout(function(){ 
-      var msg = document.getElementById("msg");
-      msg.parentNode.removeChild(msg);   
-  }, 4000);
-  }else{
+      var msg = document.getElementById("msg3");
+      //msg.parentNode.removeChild(msg);
+      msg.innerHTML = "";   
+  }, 4000);}
+
+  else if(document.getElementById('a').value != '' && document.getElementById('b').value != '' && document.getElementById('c').value != ''){
     //document.getElementById('resultado').innerHTML = "Resultado da média é: " + media;
    dadosMedia();
   }
@@ -49,12 +58,14 @@ function dadosMedia(){
    var coluna4 = linha.insertCell(3);
    var coluna5 = linha.insertCell(4);
 
-
+  if(nota1 != NaN || nota2 != NaN || nota3 != NaN){
    coluna1.innerHTML = nome;
    coluna2.innerHTML = nota1;
    coluna3.innerHTML = nota2;
    coluna4.innerHTML = nota3;
    coluna5.innerHTML = media;
+  }
+   
 
 }
 
@@ -64,16 +75,24 @@ document.addEventListener('focusout', function(event){
   var nome = document.getElementById('aluno').value;
   var sobrenome = document.getElementById('sobrenome_aluno').value;
 
-  if(nome == '' && sobrenome == ''){
-    document.getElementById('sobrenome_aluno').style.borderColor = "#fafa";
+  if(nome == ''){
+    
     document.getElementById('aluno').style.borderColor = "#fafa";
   }else{
     document.getElementById('aluno').style.borderColor = "#979797";
+    
+  }
+
+  if(sobrenome == ''){
+    document.getElementById('sobrenome_aluno').style.borderColor = "#fafa";
+  }else{
     document.getElementById('sobrenome_aluno').style.borderColor = "#979797";
   }
 })
 
-//colocar o campo de entrada e partir dele fazer o calculo(usar validacao)
+/*
+* TODO:colocar o campo de entrada e partir dele fazer o calculo(usar validacao)
+*/
 function calcularQuantidadePrestacao(){
   var valor = 30000;
   var prestacao = 750; //36
